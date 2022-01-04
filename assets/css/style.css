@@ -1,8 +1,8 @@
 :root {
     /* Uncomment the code below and change the color scheme if desired */
     primary: rgba(43, 91, 186, 0.6);
-    --light: rgb(255, 255, 255);
-    --greyish: rgb(116 121 129 / 80%);
+    --light: rgb(115, 150, 196);
+    --greyish: rgba(120, 146, 187, 0.8);
     
 }
 
@@ -12,22 +12,34 @@ html, body {
 }
 
 body {
-    background-color:rgb(14, 13, 13);
+    background-color:rgb(255, 255, 255);
 }
 
 ul {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
+    font-style: italic;
   }
+  
   
 a {
     color: var(--light) !important;
 }
+a:hover {
+    background-color: rgba(197, 212, 139, 0.75);
+    color: rgb(255, 255, 255);
+  }
 
 .custom-resume {
-    background-color:var(--light);
+    /*background-color:var(--light);*/
+    box-shadow: 0 0 5px 5px rgb(190, 186, 186);
+    background: rgb(255, 255, 255);
 }
+
+h5:hover {
+    background-color: rgba(152, 174, 180,.25);
+  }
 
 .custom-resume > div {
     min-height: 30rem;
@@ -61,7 +73,7 @@ a {
 }
 
 .custom-profile > :last-child {
-    background-color: rgba(68, 106, 182, .5);
+    background-color: rgba(108, 136, 194, 0.5);
 }
 
 .custom-city {
