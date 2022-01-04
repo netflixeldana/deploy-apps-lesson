@@ -1,8 +1,9 @@
 :root {
-    /* Uncomment the code below and change the color schem if desired */
-    /* --primary: rgba(43, 91, 186, 0.6);
-    --light: rgb(255,255,255);
-    --greyish: rgb(116 121 129 / 80%); */
+    /* Uncomment the code below and change the color scheme if desired */
+    primary: rgba(43, 91, 186, 0.6);
+    --light: rgb(255, 255, 255);
+    --greyish: rgb(116 121 129 / 80%);
+    
 }
 
 html, body {
@@ -14,6 +15,12 @@ body {
     background-color:rgb(14, 13, 13);
 }
 
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  
 a {
     color: var(--light) !important;
 }
@@ -75,12 +82,13 @@ img + p > span {
 
 /* Explain in comments below what the media queries are doing in regards to different screen sizes */
 
+/* Apply styles for Large devices (desktops, 992px and up)*/
 @media screen and (max-width: 992px){
     .custom-text-cont p {
         font-size: 0.8rem;
     }
 }
-
+/* Apply styles for Medium devices (tablets, 768px and up)*/
 @media screen and (max-width: 768px){
     .custom-resume > div > div:first-child {
         order: 2;
